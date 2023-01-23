@@ -1,35 +1,19 @@
-<h2>Login</h2>
+{{!-- https://mdbootstrap.com/docs/standard/extended/login/#section-login-register --}}
+<h2>WELCOME TO OUR GAME</h2>
+
+<h5> PLEASE LOGIN: </h3>
 
 <form id="login-form" class="card-body" method="POST" action="/api/user/login">
-  <div>
-    <label for="username-input-login">Username</label>
-    <input name="username" type="text" id="username-input-login" />
+  <div class="form-outline mb-4">
+    <label class="form-label" for="loginName">Username</label>
+    <input name="username" type="text" id="loginName" class="form-control"/>
   </div>
-  <div>
+
+  <div class="form-outline mb-4">
     <label for="password-input-login" class="form-label">Password</label>
-    <input name="password" type="password" id="password-input-login" />
+    <input name="password" type="password" id="loginPassword" class="form-control" />
   </div>
-  <a type="button" href="/game"> Login</a>
-  <a type="button" href="/signup" >Sign up instead</a>
+
+  <a type="button" href="/game" class="btn btn-primary"> Login</a>
+  <a type="button" href="/signup" class="btn btn-secondary" >Sign up instead</a>
 </form>
-
-{{!-- <script src="/js/login.js"></script> --}}
-
-{{!-- </head>
-<body>
-    <h2>Login</h2>
-
-<form id="login-form" class="card-body" method="POST" action="/api/user/login">
-  <div>
-    <label for="username-input-login">Username</label>
-    <input name="username" type="text" id="username-input-login" />
-  </div>
-  <div>
-    <label for="password-input-login" class="form-label">Password</label>
-    <input name="password" type="password" id="password-input-login" />
-  </div>
-  <a type="button" href="/game"> Login</a>
-  <a type="button" href="/signup">Sign up instead</a>
-</form>
-</body>
-</html> --}}
